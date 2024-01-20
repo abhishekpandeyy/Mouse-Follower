@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="follower"></div>
+    <div class="follower1"></div>
+    <script>
+        // alert("hey");
+        var follower=document.querySelector(".follower");
+        var follower1=document.querySelector(".follower1");
+
+        document.addEventListener("mousemove",function(details){
+            // alert("hey")
+            var x=details.clientX;
+            var y=details.clientY;
+            follower.style.left=`${x}px`;
+            follower.style.top=`${y}px`;
+            follower1.style.right=`${x}px`;
+            follower1.style.bottom=`${y}px`;
+        })
+    </script>
+</body>
+</html>
